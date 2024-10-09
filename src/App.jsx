@@ -12,7 +12,7 @@ function App() {
           <h1 id='header__name'>Delgadino Valentino</h1>
           <img id='header__profileImg' src={profileImage} alt="Imagen de perfil" />
         </div>
-        <p id='header__paragraph'>Cada uno de mis proyectos tiene una interfaz agradable para el usuario, respetando las normas de UX/UI y conntiene diseño responsivo.</p>
+        <p id='header__paragraph'>Cada uno de mis proyectos tiene una interfaz agradable para el usuario, respetando las normas de UX/UI y contiene un diseño responsivo.</p>
       </header>
       <ProjectsGalery/>
       <Footer/>
