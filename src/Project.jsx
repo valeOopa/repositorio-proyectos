@@ -13,7 +13,7 @@ const images = {
   countries,
 };
 
-function Project({ imageName, url, name }) {
+function Project({ imageName, url, name, code }) {
   const imageSrc = images[imageName];
 
   if (!imageSrc) {
@@ -23,6 +23,8 @@ function Project({ imageName, url, name }) {
   return (
     <a className="project" href={url} target="_BLANK" rel="noopener noreferrer">
         <span className='project__name'>{name}</span>
+        <a className='project__code-link' href={code}>Código</a>
+        <a className='project__code-link-mobile' href={code}>Código</a>
       <img className="project__image" src={imageSrc} alt={imageName} />
     </a>
   );
@@ -31,7 +33,8 @@ function Project({ imageName, url, name }) {
 Project.propTypes = {
   imageName: PropTypes.string.isRequired,
   url: PropTypes.string.isRequired,
-  name: PropTypes.string.isRequired
+  name: PropTypes.string.isRequired,
+  code: PropTypes.string.isRequired
 };
 
 export default Project;
